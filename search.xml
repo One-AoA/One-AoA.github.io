@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>高通QCN基带备份与恢复</title>
+      <link href="/2026/03/23/48487a4c2c62/"/>
+      <url>/2026/03/23/48487a4c2c62/</url>
+      
+        <content type="html"><![CDATA[<h1 id="打开高通Diagnostics端口提取的基带qcn文件改串号"><a href="#打开高通Diagnostics端口提取的基带qcn文件改串号" class="headerlink" title="打开高通Diagnostics端口提取的基带qcn文件改串号"></a>打开高通Diagnostics端口提取的基带qcn文件改串号</h1><p>正常机提取基带qcn文件<br>使用与刷写第三方或者升降级系统导致丢失基带或者丢失串码等故障<br>写入方法通用与其他高通芯片写入<br>高通芯片机型提取写入基带方法基本都通用的，不通用的地方在于各机型开端口的方法不同，但命令开端口基本都一样的<br>丢基带 掉串码问题这种情况一般都是系统跨版本更新或者降级或者刷写第三方rom导致的。<br>或者个别机型操作系统故障黑砖救砖后也会有几率出现无基带掉串码故障</p><h1 id="原理：利用ROOT权限强开高通Diagnostics端口"><a href="#原理：利用ROOT权限强开高通Diagnostics端口" class="headerlink" title="原理：利用ROOT权限强开高通Diagnostics端口"></a>原理：利用ROOT权限强开高通Diagnostics端口</h1><p>1、手机已经获取root权限<br>2、电脑ADB环境<br>3、输<code>adb shell</code> 回车<br>4、输入<code>su</code> 回车<br>5、输入<code>setprop sys.usb.config diag</code>回车或输入<code>setprop sys.usb.config diag,adb</code>回车<br>6.操作使用完之后，输入<code>setprop sys.usb.config mtp</code>回车，否则MTP不可用。</p><p>打开设备管理器（电脑）查看端口栏，有<code>900E</code>端口，就成功了，接下来就可以备份&#x2F;还原了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 计算机 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 刷机 </tag>
+            
+            <tag> 高通 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>命理当有此一劫</title>
       <link href="/2025/07/16/b735de434506/"/>
       <url>/2025/07/16/b735de434506/</url>
